@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <title>BAYMART YE - المنصة الرسمية للتسوق الإلكتروني</title>
+    <meta name="description" content="BAYMART YE - وجهتك المثالية للاستفادة من أقوى الخصومات والعروض الحصرية عالمياً ومحلياً، بإدارة التقني محمود الدهولي.">
+    <meta name="author" content="التقني محمود الدهولي">
+    
+    <!-- Open Graph / WhatsApp / Facebook / Telegram -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BAYMART YE - المنصة الرسمية للتسوق الإلكتروني">
+    <meta property="og:description" content="تسوق أحدث المنتجات والعروض بأسعار منافسة وسهولة فائقة عبر تطبيقنا المعتمد.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:site_name" content="BAYMART YE">
+
+    <!-- Favicon (أيقونة التبويب) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        :root {
+            --primary: #059669;
+            --primary-dark: #047857;
+            --bg-body: #f8fafc;
+            --text-dark: #0f172a;
+            --text-gray: #475569;
+            --card-bg: #1e293b;
+            --facebook: #1877f2;
+            --instagram: #e4405f;
+            --telegram: #0088cc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            direction: rtl;
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 14px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+
+        .nav-box {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(5, 150, 105, 0.3);
+        }
+
+        .brand-text h1 {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        .brand-text span {
+            font-size: 11px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .support-btn {
+            background: #25d366;
+            color: #ffffff;
+            padding: 8px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            box-shadow: 0 4px 8px rgba(37, 211, 102, 0.25);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ecfdf5;
+            color: var(--primary);
+            border: 1px solid #a7f3d0;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .hero p {
+            color: var(--text-gray);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-main {
+            background: var(--primary);
+            color: #ffffff;
+            width: 100%;
+            max-width: 280px;
+            padding: 14px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 800;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(5, 150, 105, 0.25);
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: #ffffff;
+            width: 100%;
+            max-width: 280px;
+            padding: 12px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(37, 211, 102, 0.2);
+        }
+
+        /* Features */
+        .features {
+            max-width: 800px;
+            margin: 24px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .feature-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 16px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .feature-box div {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .feature-box h4 {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .feature-box p {
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        /* Card Container */
+        .card-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            color: #ffffff;
+            padding: 24px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .info-card h3 {
+            color: #34d399;
+            font-size: 16px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+            font-size: 13px;
+        }
+
+        .info-item label {
+            color: #94a3b8;
+            display: block;
+            font-size: 11px;
+            margin-bottom: 2px;
+        }
+
+        .info-item a {
+            color: #34d399;
+            text-decoration: underline;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            text-decoration: none !important;
+            color: #ffffff !important;
+            transition: opacity 0.2s;
+        }
+
+        .social-btn:active {
+            opacity: 0.8;
+        }
+
+        .btn-fb { background: var(--facebook); }
+        .btn-insta { background: var(--instagram); }
+        .btn-tg { background: var(--telegram); }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: var(--text-gray);
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-box">
+            <div class="brand-logo">
+                <div class="logo-icon">BY</div>
+                <div class="brand-text">
+                    <h1>BAYMART YE</h1>
+                    <span>التطبيق الرسمي المعتمد</span>
+                </div>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=967734303960" target="_blank" class="support-btn">واتساب مباشر</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">✔ إصدار معتمد رسمياً | BAYMART YE</div>
+        <h2>تسوق أحدث المنتجات والعروض بأسعار منافسة وسهولة فائقة</h2>
+        <p>وجهتك المثالية للاستفادة من أقوى الخصومات والعروض الحصرية عالمياً ومحلياً، مع واجهة عربية سريعة ومصممة لتوفير أفضل رحلة تسوق.</p>
+
+        <div class="cta-buttons">
+            <a href="#download" class="btn-main">
+                <div>تحميل مباشر APK</div>
+                <span style="font-size: 11px; opacity: 0.9;">قريباً النسخة المستقرة</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=967734303960" target="_blank" class="btn-whatsapp">💬 تواصل عبر الواتساب</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-box">
+            <div>⚡</div>
+            <h4>سرعة فائقة</h4>
+            <p>تصفح مرن واستجابة فورية بدون إعلانات مزعجة.</p>
+        </div>
+        <div class="feature-box">
+            <div>🏷️</div>
+            <h4>عروض حصرية</h4>
+            <p>خصومات يومية مباشرة على أبرز المنتجات والخدمات.</p>
+        </div>
+        <div class="feature-box">
+            <div>🛡️</div>
+            <h4>توثيق رسمي</h4>
+            <p>منصة موثوقة وآمنة بالكامل للتعامل والمتابعة.</p>
+        </div>
+    </section>
+
+    <!-- Details Card -->
+    <section class="card-container">
+        <div class="info-card">
+            <h3>🛡️ بيانات التوثيق والتواصل الرسمية</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <label>اسم التطبيق التجاري</label>
+                    <strong>BAYMART YE</strong>
+                </div>
+                <div class="info-item">
+                    <label>المطور والمالك المعتمد</label>
+                    <strong>التقني محمود الدهولي (Mahmoud Al Dhwali)</strong>
+                </div>
+                <div class="info-item">
+                    <label>أرقام التواصل والواتساب</label>
+                    <strong>
+                        <a href="tel:+967734303960">+967 734303960</a> / 
+                        <a href="tel:+967774362303">+967 774362303</a>
+                    </strong>
+                </div>
+                <div class="info-item">
+                    <label>حسابات التواصل الاجتماعي الرسمية</label>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MahmoudALDahwali" target="_blank" class="social-btn btn-fb">👤 فيسبوك المطور</a>
+                        <a href="https://www.facebook.com/BaymartYe" target="_blank" class="social-btn btn-fb">🌐 صفحة Baymart Ye</a>
+                        <a href="https://www.instagram.com/ba.ymart" target="_blank" class="social-btn btn-insta">📸 انستغرام ba.ymart</a>
+                        <a href="https://t.me/sekootech1" target="_blank" class="social-btn btn-tg">👤 تليجرام المطور</a>
+                        <a href="https://t.me/BaymartYe" target="_blank" class="social-btn btn-tg">✈️ قناة Baymart Ye</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <label>البريد الإداري الرسمي</label>
+                    <a href="mailto:baymartye@gmail.com">baymartye@gmail.com</a>
+                </div>
+                <div class="info-item">
+                    <label>بريد الدعم الفني</label>
+                    <a href="mailto:supportbaymart@gmail.com">supportbaymart@gmail.com</a>
+                </div>
+                <div class="info-item">
+                    <label>حالة التطبيق</label>
+                    <strong style="color: #34d399;">معتمد ونشط</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 جميع الحقوق محفوظة لـ <strong>BAYMART YE</strong> — إدارة وتنفيذ <strong>التقني محمود الدهولي</strong>.
+    </footer>
+
+</body>
+</html>
+
